@@ -21,7 +21,7 @@ app.post('/generate-pdf', async (req, res) => {
 
     const page = await browser.newPage()
     
-    // إعداد المحتوى مع التأكد من تحميل الخطوط والصور
+    // وى مع التأكد من تحميل الخطوط والصور
     await page.setContent(html, { 
       waitUntil: 'networkidle0',
       timeout: 30000 
